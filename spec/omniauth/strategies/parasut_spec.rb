@@ -24,7 +24,7 @@ describe OmniAuth::Strategies::Parasut do
 
   context 'auth_hash' do
     it 'should assign raw_info' do
-      expect(access_token).to receive(:get).with('/v4/me').and_return(response)
+      expect(access_token).to receive(:get).with('/v4/atlasiam').and_return(response)
       expect(strategy.extra[:raw_info]).to eq(parsed_response)
     end
 
