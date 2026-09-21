@@ -32,7 +32,7 @@ One can configure parasut api home url by using the below script in an initializ
 
 ```ruby
 OmniAuth::Strategies::Parasut.configure do |default_options|
-  default_options['client_options'] = { site: 'http://api.heroku-staging.parasut.com' }
+  default_options['client_options'] = { site: 'http://api-dev.parasut.com' }
 end
 ```
 
